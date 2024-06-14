@@ -96,7 +96,6 @@ abstract class WindowMixin implements BorderlessWindowState {
             return;
         }
 
-        RenderSystem.assertInInitPhase();
         Monitor monitor = this.monitorTracker.getMonitor((Window)(Object)this);
         if (monitor == null) {
             LOGGER.warn("Failed to find suitable monitor for fullscreen mode");
